@@ -222,3 +222,44 @@ powershell.exe -ExecutionPolicy Bypass -File .\inventaire.ps1
     </ul>
 
     <h2>Changelog</h2>
+    <pre>
+1.4 - 31/03/2026 : Correction des chemins (Rangement automatique)
+1.3 - 31/03/2026 : Ajout de l'export CSV pour Excel/EasyVista (Sami)
+    </pre>
+</main>
+
+<footer>
+    © Équipe IT – Scan Périphérique
+</footer>
+
+<!-- SCRIPT DU SWITCH DE THÈME -->
+<script>
+    const toggle = document.getElementById("themeToggle");
+    const body = document.body;
+
+    // Charger le thème sauvegardé
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme) {
+        body.classList.remove("theme-light", "theme-rochelais");
+        body.classList.add(savedTheme);
+        toggle.textContent = savedTheme === "theme-light" ? "🌞" : "🌙";
+    }
+
+    // Changer de thème
+    toggle.addEventListener("click", () => {
+        if (body.classList.contains("theme-light")) {
+            body.classList.remove("theme-light");
+            body.classList.add("theme-rochelais");
+            toggle.textContent = "🌙";
+            localStorage.setItem("theme", "theme-rochelais");
+        } else {
+            body.classList.remove("theme-rochelais");
+            body.classList.add("theme-light");
+            toggle.textContent = "🌞";
+            localStorage.setItem("theme", "theme-light");
+        }
+    });
+</script>
+
+</body>
+</html>
