@@ -8,26 +8,6 @@ $ServeurCollecte = "SERVEUR_HOST"
 $Partage = "Inventaire$"
 $SambaPath = "\\$ServeurCollecte\$Partage"
 
-# --- CONFIG SQL GENERIQUE ---
-$SQLServer = "localhost\SQLEXPRESS"
-$SQLDatabase = "InventaireIT"
-
-# --- INSERTION SQL GENERIQUE ---
-$query = @"
-INSERT INTO Machines (NomMachine, Utilisateur, OS, VersionOS, CPU, RAM, IP, NumeroSerie, DernierLogon, DernierBoot)
-VALUES ('$PCName', '$UserSession', '$OSFriendly', '$OSBuild', '$cpu', '$ram', '$IPs', '$serial', '$LastLogon', '$LastBoot');
-"@
-
-$connectionString = "Server=$SQLServer;Database=$SQLDatabase;Integrated Security=True;"
-$connection = New-Object System.Data.SqlClient.SqlConnection $connectionString
-$connection.Open()
-
-$command = $connection.CreateCommand()
-$command.CommandText = $query
-$command.ExecuteNonQuery()
-
-$connection.Close()
-
 # === DEFINITION DES CHEMINS ===
 $FolderTXT = Join-Path $SambaPath "Rapports_Detailles"
 $FolderCSV = Join-Path $SambaPath "Base_Donnees"
