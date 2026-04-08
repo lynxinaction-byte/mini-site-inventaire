@@ -76,7 +76,8 @@
             border-bottom: 1px solid #ccc;
         }
 
-        body.theme-light .about-box {
+        body.theme-light .about-box,
+        body.theme-light .feature-box {
             background: rgba(255,255,255,0.7);
             border-left: 4px solid #1e3c72;
             color: #2c3e50;
@@ -132,7 +133,8 @@
             border-bottom: 1px solid #333;
         }
 
-        body.theme-rochelais .about-box {
+        body.theme-rochelais .about-box,
+        body.theme-rochelais .feature-box {
             background: rgba(255, 204, 0, 0.08);
             border-left: 4px solid #ffcc00;
             color: #ffcc00;
@@ -152,14 +154,16 @@
             text-align: left;
         }
 
-        /* --- ENCADRÉ À PROPOS --- */
-        .about-box {
+        /* --- ENCADRÉS --- */
+        .about-box, .feature-box {
             padding: 18px 20px;
             border-radius: 8px;
-            margin: 25px 0;
+            margin: 25px auto;
             font-size: 0.95rem;
             line-height: 1.5;
             backdrop-filter: blur(4px);
+            display: inline-block;
+            text-align: left;
         }
 
         .about-box strong {
@@ -291,13 +295,17 @@ powershell.exe -ExecutionPolicy Bypass -File .\inventaire.ps1
     </pre>
 
     <h2>Fonctionnalités principales</h2>
-    <ul>
-        <li>Collecte OS, build, CPU, RAM, IP, numéro de série</li>
-        <li>Analyse des logiciels installés (versions les plus récentes)</li>
-        <li>Détection du dernier logon et dernier boot</li>
-        <li>Export TXT détaillé + export CSV global</li>
-        <li>Rangement automatique dans les bons dossiers réseau</li>
-    </ul>
+
+    <!-- ENCADRÉ DES FONCTIONNALITÉS -->
+    <div class="feature-box">
+        <ul>
+            <li>Collecte OS, build, CPU, RAM, IP, numéro de série</li>
+            <li>Analyse des logiciels installés (versions les plus récentes)</li>
+            <li>Détection du dernier logon et dernier boot</li>
+            <li>Export TXT détaillé + export CSV global</li>
+            <li>Rangement automatique dans les bons dossiers réseau</li>
+        </ul>
+    </div>
 
     <h2>Changelog</h2>
 
