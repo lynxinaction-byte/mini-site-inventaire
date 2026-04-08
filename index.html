@@ -15,98 +15,16 @@
             transition: background 0.4s, color 0.4s;
         }
 
-        /* --- THEME LIGHT (bleu/blanc) --- */
-        body.theme-light {
-            background: linear-gradient(135deg, #1e3c72, #2a5298);
-            color: #2c3e50;
+        /* --- CENTRAGE GLOBAL DU TEXTE --- */
+        main {
+            text-align: center;
         }
 
-        body.theme-light header {
-            background: rgba(255, 255, 255, 0.1);
-            color: white;
-            border-bottom: 1px solid rgba(255,255,255,0.2);
-        }
-
-        body.theme-light main {
-            background: white;
-            color: #2c3e50;
-        }
-
-        body.theme-light h2 {
-            color: #1e3c72;
-        }
-
-        body.theme-light .btn {
-            background: #1e3c72;
-            color: white;
-        }
-
-        body.theme-light .btn:hover {
-            background: #16315c;
-        }
-
-        body.theme-light pre {
-            background: #2d3436;
-            color: #ecf0f1;
-        }
-
-        body.theme-light footer {
-            color: white;
-        }
-
-        body.theme-light .version-table th {
-            background: rgba(30, 60, 114, 0.15);
-            color: #1e3c72;
-            border-bottom-color: #1e3c72;
-        }
-
-        body.theme-light .version-table td {
-            border-bottom: 1px solid #ccc;
-        }
-
-        body.theme-light .about-box {
-            background: rgba(255,255,255,0.7);
-            border-left: 4px solid #1e3c72;
-            color: #2c3e50;
-        }
-
-        /* --- THEME ROCHELAIS (noir/jaune) --- */
-        body.theme-rochelais {
-            background: #0d0d0d;
-            color: #f2f2f2;
-        }
-
-        body.theme-rochelais header {
-            background: rgba(255, 204, 0, 0.05);
-            color: #ffcc00;
-            border-bottom: 1px solid rgba(255,204,0,0.2);
-        }
-
-        body.theme-rochelais main {
-            background: #1a1a1a;
-            color: #f2f2f2;
-        }
-
-        body.theme-rochelais h2 {
-            color: #ffcc00;
-        }
-
-        body.theme-rochelais .btn {
-            background: #ffcc00;
-            color: #000;
-        }
-
-        body.theme-rochelais .btn:hover {
-            background: #e6b800;
-        }
-
-        body.theme-rochelais pre {
-
-        body {
-            font-family: 'Inter', sans-serif;
-            margin: 0;
-            padding: 0;
-            transition: background 0.4s, color 0.4s;
+        /* Garder les listes et tableaux lisibles */
+        ul, .version-table {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left;
         }
 
         /* --- THEME LIGHT (bleu/blanc) --- */
