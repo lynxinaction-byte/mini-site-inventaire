@@ -4,7 +4,7 @@
 # 1.3 - 31/03/2026 : Ajout de l'export CSV pour Excel/EasyVista (Sami)
 
 # --- CONFIGURATION ---
-$ServeurCollecte = "SERVEUR_HOST"
+$ServeurCollecte = "PO11102118"
 $Partage = "Inventaire$"
 $SambaPath = "\\$ServeurCollecte\$Partage"
 
