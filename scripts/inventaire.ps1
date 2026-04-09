@@ -4,8 +4,8 @@
 # 1.3 - 31/03/2026 : Ajout de l'export CSV pour Excel/EasyVista (Sami)
 
 # --- CONFIGURATION ---
-$ServeurCollecte = "PO11102118"
-$Partage = "Inventaire$"
+$ServeurCollecte = "VOTRE-SERVEUR-FICHIERS" # Nom du serveur de stockage
+$Partage = "NOM-DU-PARTAGE$" # Nom du partage caché
 $SambaPath = "\\$ServeurCollecte\$Partage"
 
 # === DEFINITION DES CHEMINS ===
